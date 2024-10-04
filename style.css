@@ -175,7 +175,7 @@ nav{
     right: 0;
     width: 90%;
     height: 50vh;
-    background-color: blue;
+    background-color: rgba(8, 8, 60, 0.962);
     transform:translateX(100%);
     transition: 0.5s;
     visibility: hidden;
@@ -186,7 +186,9 @@ nav{
     flex-direction: column;
     align-items: center;
 }
-
+.ul li{
+    border-bottom: 1px solid white;
+}
 .active .navbar {
     transform: translateX(0);
     opacity: 1;
