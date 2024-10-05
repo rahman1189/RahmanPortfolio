@@ -106,6 +106,17 @@ ion-icon:hover {
     display: none;
 }
 
+.skills{
+    display: flex;
+}
+.skills div{
+    border: 1px solid orange;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+
 @media screen and (max-width:1000px) {
     .main img {
         margin: auto auto;
@@ -133,6 +144,15 @@ ion-icon:hover {
 }
 
 @media screen and (max-width:760px) {
+    .skills{
+        display: block !important;
+    }
+.skills div{
+    border: 1px solid orange;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 5px;
+}
     .logo {
         font-size: xx-large;
         margin-top: 20px;
@@ -229,12 +249,3 @@ ion-icon:hover {
     }
 }
 
-.skills{
-}
-
-.skills div{
-    border: 1px solid orange;
-    padding: 40px;
-    border-radius: 20px;
-    margin: 5px;
-}
