@@ -32,14 +32,14 @@ header {
 }
 
 .ul li,
-a {
+.liIcon {
     list-style: none;
     text-decoration: none;
     color: white;
     padding: 8px;
 }
 
-a:hover {
+.liIcon:hover,.liIcon:active {
     color: orange;
     border-bottom: 1px solid orange;
     transition: 0.3s;
@@ -75,7 +75,7 @@ section {
 ion-icon {
     height: 35px;
     width: 35px;
-    margin: 10px 10px 0px 0px;
+    margin: 10px 5px 0px 5px;
     border-radius: 8px;
 }
 
@@ -85,7 +85,14 @@ ion-icon:hover {
     box-shadow: 0px 10px 30px -5px white;
     cursor: pointer;
 }
-
+.infoIcon{
+    color: red;
+}
+.infoIcon:hover{
+    color: rgb(252, 7, 138);
+    border-bottom: 1px solid orange;
+    transition: 0.3s;
+}
 .mobile-navbar-btn {
     display: none;
     background: transparent;
@@ -212,3 +219,4 @@ section {
         font-size: small;
     }
 }
+
