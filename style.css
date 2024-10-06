@@ -88,11 +88,14 @@ ion-icon:hover {
     box-shadow: 0px 10px 30px -5px white;
     cursor: pointer;
 }
-.infoIcon{
+.youtubeIcon{
     color: red;
 }
+ .instaIcon{
+     color: rgb(255, 31, 69);
+ }
 .infoIcon:hover{
-    color: rgb(252, 7, 138);
+    /* color: rgb(252, 7, 138); */
     border-bottom: 1px solid orange;
     transition: 0.3s;
 }
@@ -105,17 +108,24 @@ ion-icon:hover {
 [name="close-outline"] {
     display: none;
 }
-
 .skills{
-    display: flex;
+    padding-left: 45px;
 }
 .skills div{
+    display: inline-block;
     border: 1px solid orange;
-    padding: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 20px;
     margin: 5px;
+    text-align: center;
 }
-
+.skills div h3{
+    margin-top: 5px;
+}
+.skills div img{
+    margin-top: 50px;
+}
 
 @media screen and (max-width:1000px) {
     .main img {
@@ -123,8 +133,57 @@ ion-icon:hover {
         border-radius: 50%;
         height: 300px;
     }
+    .ul li,
+.liIcon {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-size: large;
+    font-weight: 500;
 }
 
+}
+@media screen and (max-width:916px){
+    .skills{
+        padding-left: 20px;
+    }
+    .skills div{
+        display: inline-block;
+        border: 1px solid orange;
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        margin: 5px;
+        text-align: center;
+    }
+    .skills div h3{
+        margin-top: 5px;
+    }
+    .skills div img{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:1187px) {
+    .skills{
+        padding-left: 5px;
+    }
+    .skills div{
+        display: inline-block;
+        border: 1px solid orange;
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        /* margin: 5px; */
+        text-align: center;
+    }
+    .skills div h3{
+        margin-top: 5px;
+    }
+    .skills div img{
+        margin-top: 50px;
+    }
+}
 @media screen and (max-width:850px) {
     .indexSection {
         flex-direction: column;
@@ -144,15 +203,23 @@ ion-icon:hover {
 }
 
 @media screen and (max-width:760px) {
-    .skills{
-        display: block !important;
-    }
 .skills div{
     border: 1px solid orange;
-    padding: 40px;
+    height: 150px;
+    width: 97%;
     border-radius: 20px;
-    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
+.skills div h3{
+    margin-top: 60px;
+}
+.skills div img{
+    margin-top: 50px;
+}
+
+
     .logo {
         font-size: xx-large;
         margin-top: 20px;
@@ -183,19 +250,20 @@ ion-icon:hover {
         justify-content: center;
         align-items: center;
         top: 65px;
-        right: 0;
+        right: 20px;
         width: 90%;
         height: 50vh;
-        background-color: rgba(8, 8, 60, 0.962);
+        /* background-color: rgba(8, 8, 60, 0.962); */
+        /* background-color: rgba(230, 159, 28, 0.982); */
+        background-color: orange;
         /* transform: translateX(100%); */
         transition: 0.4s;
         /* transition: all 0.5s linear; */
         visibility: hidden;
         /* pointer-events: none; */
         opacity: 0;
-
+        border-radius: 2px;
     }
-
     .ul {
         flex-direction: column;
         align-items: center;
@@ -203,6 +271,7 @@ ion-icon:hover {
 
     .ul li {
         border-bottom: 1px solid white;
+        border-bottom: 1px solid orangered;
     }
 
     .active .navbar {
@@ -249,3 +318,33 @@ ion-icon:hover {
     }
 }
 
+@media screen and (max-width:760px) {
+    .skills div{
+        border: 1px solid orange;
+        height: 110px;
+        width: 97%;
+        border-radius: 20px;
+        /* margin: 5px; */
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    .skills div h3{
+        margin-top: 40px;
+    }
+    .skills div img{
+        margin-top: 30px;
+    }
+}
+
+table{
+    text-align: center;
+}
+table th{
+    background-color: orange;
+    padding: 10px;
+}
+table td{
+    border: 1px solid white;
+    padding: 20px;
+}
